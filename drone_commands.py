@@ -1,0 +1,8 @@
+def takeoff(): print("TAKEOFF")
+def land(): print("LAND")
+def move_left(): print("LEFT")
+def move_right(): print("RIGHT")
+def move_up(): print("UP")
+def move_down(): print("DOWN")
+def move_forward(): print("FORWARD")
+def move_backward(): print(" BACKWARD")

@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+venv_mp/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model files (optional: remove if you want them tracked)
+models/*.pkl
+
+# Dataset (optional)
+data/gestures.csv
+
+# OS files
+.DS_Store
