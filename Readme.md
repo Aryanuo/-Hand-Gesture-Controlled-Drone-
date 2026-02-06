@@ -36,41 +36,41 @@ Instead of working on raw image pixels, the system uses **hand landmarks**, whic
 ## ✋ Supported Gestures & Commands
 
 | Gesture | Command |
-|------|------|
-| ✋ Open palm | Takeoff |
-| ✊ Closed fist | Land |
-| 👈 Thumb left | Move Left |
-| 👉 Thumb right | Move Right |
-| 👍 Thumb up | Move Up |
-| 👎 Thumb down | Move Down |
-|     Index finger upward| Move Forward |
-|     Two finger upward| Move Backward |
+|------|------|  
+| ✋ Open palm | Takeoff |  
+| ✊ Closed fist | Land |  
+| 👈 Thumb left | Move Left |  
+| 👉 Thumb right | Move Right |  
+| 👍 Thumb up | Move Up |  
+| 👎 Thumb down | Move Down |  
+|     Index finger upward| Move Forward |  
+|     Two finger upward| Move Backward |  
 
 👉 Thumb-only gestures are used for motion commands(up,down,left,right) to reduce confusion.
 
 ---
 
-## 📁 Project Structure
-
-hand_gesture_drone/
+## 📁 Project Structure  
+  
+hand_gesture_drone/  
+│  
+├── camera.py # Opens the webcam using OpenCV  
+├── hand_tracker.py # MediaPipe hand landmark detection  
+├── data_collector.py # Collects labeled training data  
+├── train_mlp.py # Trains the MLP classifier  
+├── predict.py # Loads model and predicts gestures  
+├── drone_commands.py # Dummy drone command functions  
+├── main.py # Runs the live gesture control system  
+│  
+├── data/  
+│ └── gestures.csv # Collected gesture dataset  
+│  
+├── models/  
+│ ├── gesture_mlp.pkl # Trained MLP model  
+│ └── label_encoder.pkl # Label encoder  
 │
-├── camera.py # Opens the webcam using OpenCV
-├── hand_tracker.py # MediaPipe hand landmark detection
-├── data_collector.py # Collects labeled training data
-├── train_mlp.py # Trains the MLP classifier
-├── predict.py # Loads model and predicts gestures
-├── drone_commands.py # Dummy drone command functions
-├── main.py # Runs the live gesture control system
-│
-├── data/
-│ └── gestures.csv # Collected gesture dataset
-│
-├── models/
-│ ├── gesture_mlp.pkl # Trained MLP model
-│ └── label_encoder.pkl # Label encoder
-│
-├── requirements.txt
-└── README.md
+├── requirements.txt  
+└── README.md  
 
 
 ---
@@ -168,3 +168,10 @@ Adding new gestures later:
 data_collector.py → train_mlp.py → main.py
 Daily demo / testing:
 main.py only
+
+Demo video
+
+
+
+https://github.com/user-attachments/assets/b8b37b5c-3c6f-4c5e-9072-1aed5688224e
+
