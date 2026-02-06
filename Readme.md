@@ -97,7 +97,7 @@ All dependencies are listed in `requirements.txt`:
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/hand-gesture-drone.git
+git clone https://github.com/Aryanuo/-Hand-Gesture-Controlled-Drone-.git
 cd hand-gesture-drone
 
 2️⃣ Install dependencies
